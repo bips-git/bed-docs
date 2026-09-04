@@ -1,0 +1,52 @@
+:root {
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --vp-font-family-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 18.4px;
+}
+
+.vp-doc { line-height: 1.7; }
+
+:root {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: rgba(246, 246, 247, 0.8);
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.72);
+  --vp-c-text-1: #1d1d1f;
+  --vp-c-text-2: #6e6e73;
+  --vp-c-divider: rgba(0, 0, 0, 0.08);
+  --vp-c-brand-1: #0071e3;
+  --vp-c-brand-2: #0071e3;
+  --vp-c-brand-3: #0077ed;
+}
+
+.dark {
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: rgba(20, 20, 22, 0.8);
+  --vp-c-bg-elv: rgba(28, 28, 30, 0.72);
+  --vp-c-text-1: #f5f5f7;
+  --vp-c-text-2: #98989d;
+  --vp-c-divider: rgba(255, 255, 255, 0.08);
+  --vp-c-brand-1: #0a84ff;
+  --vp-c-brand-2: #0a84ff;
+  --vp-c-brand-3: #369aff;
+}
+
+.VPNavBar {
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.VPSidebar {
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .VPSidebarItem .link { transition: color 0.15s ease; }
+}
+
+.vp-doc > div { max-width: 78ch; }
+
+@media (max-width: 768px) {
+  .VPSidebar { backdrop-filter: blur(12px); }
+}

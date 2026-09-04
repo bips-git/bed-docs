@@ -1,0 +1,5 @@
+* text=auto eol=lf
+pnpm-lock.yaml linguist-generated=true merge=ours
+*.png binary
+*.jpg binary
+*.svg binary
