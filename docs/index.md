@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: B.Ed 4th Sem Study Material
+  name: B.Ed Study Material
   text: Clear, fast, readable.
   tagline: Semester IV coursework, explained simply.
 features:
