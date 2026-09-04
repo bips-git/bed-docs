@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/bed-docs/',
-  title: 'B.Ed Study Materials',
+  title: 'B.Ed Study Material',
   appearance: 'light',
   themeConfig: {
     search: { provider: 'local' },
@@ -12,12 +12,12 @@ export default defineConfig({
       {
         text: 'Courses',
         items: [
-          { text: 'VI · Gender, School and Society', link: '/gender-school-society/unit-1-key-concerns' },
-          { text: 'VIII · Knowledge and Curriculum', link: '/knowledge-curriculum/unit-1-dynamics' },
-          { text: 'X · Creating an Inclusive School', link: '/inclusive-school/unit-1-introduction' },
-          { text: 'XI · Guidance and Counselling', link: '/guidance-counselling/unit-1-overview' },
-          { text: 'EPC-3 · Critical Understanding of ICT', link: '/ict-critical-understanding/unit-1-digital-technology' },
-          { text: 'EPC-4 · Yoga Education', link: '/yoga-education/unit-1-introduction' },
+          { text: 'Gender, School and Society - (1.4.6)', link: '/gender-school-society/unit-1-key-concerns' },
+          { text: 'Knowledge and Curriculum - (1.4.8B)', link: '/knowledge-curriculum/unit-1-dynamics' },
+          { text: 'Creating an Inclusive School - (1.4.10)', link: '/inclusive-school/unit-1-introduction' },
+          { text: 'Guidance and Counselling - (1.4.11)', link: '/guidance-counselling/unit-1-overview' },
+          { text: 'Critical Understanding of ICT - (EPC-3)', link: '/ict-critical-understanding/unit-1-digital-technology' },
+          { text: 'Yoga Education - (EPC-4)', link: '/yoga-education/unit-1-introduction' },
         ],
       },
       { text: 'GitHub', link: 'https://github.com/bips-git' },
