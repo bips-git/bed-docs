@@ -1,0 +1,9 @@
+<svg width="160" height="48" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img">
+  <g transform="translate(4,4)">
+    <!-- isometric cube mark -->
+    <path d="M20 0 L38 10 L20 20 L2 10 Z" fill="#818CF8"/>
+    <path d="M2 10 L20 20 L20 40 L2 30 Z" fill="#4F46E5"/>
+    <path d="M38 10 L20 20 L20 40 L38 30 Z" fill="#6366F1"/>
+  </g>
+  <text x="56" y="32" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="26" fill="currentColor" letter-spacing="1">B.ED</text>
+</svg>

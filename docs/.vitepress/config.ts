@@ -7,7 +7,8 @@ export default defineConfig({
   themeConfig: {
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
-
+    logo: '/logo.svg',
+    siteTitle: false, 
     nav: [
       {
         text: 'Courses',
