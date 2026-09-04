@@ -1,0 +1,27 @@
+name: Deploy to Codeberg Pages
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - name: Push dist to Codeberg pages branch
+        env:
+          CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+        run: |
+          cd docs/.vitepress/dist
+          git init -b pages
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Deploy ${{ github.sha }}"
+          git push --force https://$CODEBERG_TOKEN@codeberg.org/bips-git/bed-docs.git pages:pages

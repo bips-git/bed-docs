@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/bed-docs/',
   title: 'B.Ed 4th Sem Study Materials',
   appearance: 'light',
   themeConfig: {
