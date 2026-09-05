@@ -5,23 +5,14 @@
 ### Last Minute Study Materials for B.Ed 4th Semester, BSAEU
 *(Baba Saheb Ambedkar Education University)*
 
-<br/>
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fbips-git.codeberg.page%2Fbed-docs%2F&label=site&up_message=online&down_message=offline)](https://bips-git.codeberg.page/bed-docs/)
+[![Build](https://img.shields.io/github/actions/workflow/status/bips-git/bed-docs/deploy-codeberg.yml?branch=main&label=build)](https://github.com/bips-git/bed-docs/actions)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Built with VitePress](https://img.shields.io/badge/built%20with-VitePress-5c6ac4)](https://vitepress.dev)
+[![Origin](https://img.shields.io/badge/origin-Codeberg-2185D0)](https://codeberg.org/bips-git/bed-docs)
+[![Last Commit](https://img.shields.io/github/last-commit/bips-git/bed-docs)](https://github.com/bips-git/bed-docs/commits/main)
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fbips-git.codeberg.page%2Fbed-docs%2F&label=SITE&up_message=ONLINE&down_message=OFFLINE&style=for-the-badge)](https://bips-git.codeberg.page/bed-docs/)
-[![Build](https://img.shields.io/github/actions/workflow/status/bips-git/bed-docs/deploy-codeberg.yml?branch=main&label=BUILD&style=for-the-badge)](https://github.com/bips-git/bed-docs/actions)
-[![License](https://img.shields.io/badge/LICENSE-CC%20BY--NC--SA%204.0-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-[![VitePress](https://img.shields.io/badge/BUILT%20WITH-VITEPRESS-5c6ac4?style=for-the-badge&logo=vite&logoColor=white)](https://vitepress.dev)
-[![pnpm](https://img.shields.io/badge/PACKAGE%20MANAGER-PNPM-f69220?style=for-the-badge&logo=pnpm&logoColor=white)](https://pnpm.io)
-[![Origin](https://img.shields.io/badge/ORIGIN-CODEBERG-2185D0?style=for-the-badge&logo=codeberg&logoColor=white)](https://codeberg.org/bips-git/bed-docs)
-
-[![Last Commit](https://img.shields.io/github/last-commit/bips-git/bed-docs?style=for-the-badge&label=LAST%20COMMIT&color=success)](https://github.com/bips-git/bed-docs/commits/main)
-
-<br/>
-
-[![Read the Docs](https://img.shields.io/badge/📖_READ_THE_DOCS-brightgreen?style=for-the-badge)](https://bips-git.codeberg.page/bed-docs/)
-
-**[Features](#-features)** · **[Getting Started](#-getting-started)** · **[Deployment](#-deployment)** · **[Contributing](#-contributing)**
+[**📖 Read the Docs**](https://bips-git.codeberg.page/bed-docs/) · [Report an Issue](https://github.com/bips-git/bed-docs/issues) · [Contributing](#-contributing)
 
 </div>
 
@@ -91,7 +82,7 @@ pnpm docs:build
 
 ## 📦 Deployment
 
-**Codeberg is the source of truth** — all development happens there first. **GitHub Actions** (`deploy-codeberg.yml`) handles CI/CD and deploys the compiled static output to **both GitHub Pages and Codeberg Pages** on every push to `main`, so the two hosted copies stay in sync automatically.
+**Codeberg is the source of truth** — all development happens there first. **GitHub Actions** handles CI/CD and deploys the compiled static output to **both GitHub Pages and Codeberg Pages** on every push to `main`, so the two hosted copies stay in sync automatically.
 
 ## 🤝 Contributing
 
