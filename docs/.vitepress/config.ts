@@ -21,7 +21,11 @@ export default defineConfig({
           { text: 'Yoga Education - (EPC-4)', link: '/yoga-education/unit-1-introduction' },
         ],
       },
-      { text: 'GitHub', link: 'https://github.com/bips-git' },
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/bips-git' },
+      { icon: 'codeberg', link: 'https://codeberg.org/bips-git' },
     ],
 
     sidebar: {

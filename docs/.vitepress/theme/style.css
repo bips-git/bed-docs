@@ -1,8 +1,13 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+
 :root {
-  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --vp-font-family-mono: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 18.4px;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 19.2px;
 }
 
 .vp-doc { line-height: 1.7; }
@@ -49,4 +54,68 @@
 
 @media (max-width: 768px) {
   .VPSidebar { backdrop-filter: blur(12px); }
+}
+
+/* Named themes — chosen from the picker in the nav bar, persisted to
+   localStorage by ThemeSwitcher.vue. "Default" leaves these variables
+   untouched, so it keeps riding VitePress's own light/dark toggle.
+   Every other theme below is a *fixed* palette — it does not change
+   when the reader flips light/dark, because these rules are declared
+   after (and win over) both :root and .dark. The appearance toggle is
+   hidden whenever one of these is active (see rule further down) so
+   there's no dead control sitting in the nav bar. */
+
+html[data-theme="teal"] {
+  --vp-c-bg: #f4faf9;
+  --vp-c-bg-alt: rgba(230, 245, 242, 0.8);
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.75);
+  --vp-c-text-1: #0f2a27;
+  --vp-c-text-2: #4b6b66;
+  --vp-c-divider: rgba(15, 42, 39, 0.1);
+  --vp-c-brand-1: #0d9488;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+}
+
+html[data-theme="nord"] {
+  --vp-c-bg: #2e3440;
+  --vp-c-bg-alt: rgba(59, 66, 82, 0.8);
+  --vp-c-bg-elv: rgba(67, 76, 94, 0.72);
+  --vp-c-text-1: #eceff4;
+  --vp-c-text-2: #b7c0d8;
+  --vp-c-divider: rgba(216, 222, 233, 0.12);
+  --vp-c-brand-1: #88c0d0;
+  --vp-c-brand-2: #88c0d0;
+  --vp-c-brand-3: #8fbcbb;
+}
+
+html[data-theme="neon"] {
+  --vp-c-bg: #0a0a12;
+  --vp-c-bg-alt: rgba(18, 18, 30, 0.8);
+  --vp-c-bg-elv: rgba(24, 24, 38, 0.75);
+  --vp-c-text-1: #e8e8f0;
+  --vp-c-text-2: #9d9db0;
+  --vp-c-divider: rgba(255, 255, 255, 0.08);
+  --vp-c-brand-1: #00e5ff;
+  --vp-c-brand-2: #00e5ff;
+  --vp-c-brand-3: #ff2fb0;
+}
+
+html[data-theme="navy-blue"] {
+  --vp-c-bg: #0b1524;
+  --vp-c-bg-alt: rgba(15, 26, 42, 0.8);
+  --vp-c-bg-elv: rgba(20, 33, 52, 0.72);
+  --vp-c-text-1: #e6edf7;
+  --vp-c-text-2: #94a7c4;
+  --vp-c-divider: rgba(230, 237, 247, 0.1);
+  --vp-c-brand-1: #4d8dff;
+  --vp-c-brand-2: #4d8dff;
+  --vp-c-brand-3: #7db1ff;
+}
+
+/* Hide VitePress's own light/dark toggle while a fixed theme is
+   active — flipping it would do nothing visible since the variables
+   above override .dark, so leaving it live would just be confusing. */
+html[data-theme] .VPSwitchAppearance {
+  display: none !important;
 }

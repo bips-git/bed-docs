@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: B.Ed Study Material
-  text: Clear, Easy English
+  text: Clear, Concise, Simplified
   tagline: Semester IV coursework, explained simply.
 features:
   - title: Gender, School and Society

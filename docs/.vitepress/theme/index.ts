@@ -1,4 +1,16 @@
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import ThemeSwitcher from './ThemeSwitcher.vue'
 import './style.css'
 
-export default DefaultTheme
+export default {
+  extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'nav-bar-content-after': () => h(ThemeSwitcher),
+    })
+  },
+  enhanceApp({ app }) {
+    app.component('ThemeSwitcher', ThemeSwitcher)
+  },
+}
