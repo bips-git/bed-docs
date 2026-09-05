@@ -11,6 +11,8 @@ const themes = [
   { id: 'navy-blue', label: 'Navy Blue', swatch: '#4d8dff' },
 ]
 
+const DARK_THEMES = ['nord', 'neon', 'navy-blue']
+
 const activeId = ref('default')
 const open = ref(false)
 const root = ref(null)
@@ -21,10 +23,20 @@ function current() {
 
 function apply(id) {
   activeId.value = id
+  const html = document.documentElement
   if (id === 'default') {
-    document.documentElement.removeAttribute('data-theme')
+    html.removeAttribute('data-theme')
+    try {
+      const pref = localStorage.getItem('vitepress-theme-appearance')
+      if (pref === 'dark') html.classList.add('dark')
+      else if (pref === 'light') html.classList.remove('dark')
+      else html.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches)
+    } catch (e) {
+      // ignore — leave the class as-is
+    }
   } else {
-    document.documentElement.setAttribute('data-theme', id)
+    html.setAttribute('data-theme', id)
+    html.classList.toggle('dark', DARK_THEMES.includes(id))
   }
   try {
     localStorage.setItem(STORAGE_KEY, id)
