@@ -37,7 +37,17 @@ export default defineConfig({
           { text: 'Gender, School and Society - (1.4.6)', link: '/gender-school-society/unit-1-key-concerns' },
           { text: 'Knowledge and Curriculum - (1.4.8B)', link: '/knowledge-curriculum/unit-1-dynamics' },
           { text: 'Creating an Inclusive School - (1.4.10)', link: '/inclusive-school/unit-1-introduction' },
-          { text: 'Guidance and Counselling - (1.4.11)', link: '/guidance-counselling/unit-1-overview' },
+          {
+            text: '1.4.11 – Optional',
+            items: [
+              { text: 'Guidance and Counselling', link: '/guidance-counselling/unit-1-overview' },
+              { text: 'Environmental & Population Education', link: '/environmental-population-education/unit-1-concept-population-education' },
+              { text: 'Yoga Education (Optional)', link: '/yoga-education-optional/unit-1-introduction-yoga-yogic-practices' },
+              { text: 'Work & Vocational Education', link: '/work-vocational-education/unit-1-aims-objectives-bases' },
+              { text: 'Peace & Value Education', link: '/peace-value-education/unit-1-peace-education' },
+              { text: 'Health and Physical Education', link: '/health-physical-education/unit-1-health-education-scenario-india' },
+            ],
+          },
           { text: 'Critical Understanding of ICT - (EPC-3)', link: '/ict-critical-understanding/unit-1-digital-technology' },
           { text: 'Yoga Education - (EPC-4)', link: '/yoga-education/unit-1-introduction' },
         ],
@@ -88,6 +98,56 @@ export default defineConfig({
           { text: 'Unit III: Adjustment and Maladjustment', link: '/guidance-counselling/unit-3-adjustment' },
           { text: 'Unit IV: Tools and Techniques', link: '/guidance-counselling/unit-4-tools-techniques' },
           { text: 'Unit V: Abnormal Behaviour and Mental Illness', link: '/guidance-counselling/unit-5-abnormal-behaviour' },
+        ],
+      }],
+      '/environmental-population-education/': [{
+        text: 'Environmental & Population Education',
+        items: [
+          { text: 'Unit I: Concept of Population Education', link: '/environmental-population-education/unit-1-concept-population-education' },
+          { text: 'Unit II: Concept of Environmental Education', link: '/environmental-population-education/unit-2-concept-environmental-education' },
+          { text: 'Unit III: Population Education Policies', link: '/environmental-population-education/unit-3-population-education-policies' },
+          { text: 'Unit IV: Sustainable Development', link: '/environmental-population-education/unit-4-sustainable-development' },
+          { text: 'Unit V: Population and Environmental Issues', link: '/environmental-population-education/unit-5-population-environmental-issues' },
+        ],
+      }],
+      '/yoga-education-optional/': [{
+        text: 'Yoga Education (Optional)',
+        items: [
+          { text: 'Unit I: Introduction to Yoga and Yogic Practices', link: '/yoga-education-optional/unit-1-introduction-yoga-yogic-practices' },
+          { text: 'Unit II: Ancient Indian Philosophy and Yoga System', link: '/yoga-education-optional/unit-2-ancient-indian-philosophy-yoga-system' },
+          { text: 'Unit III: Historical Aspects of Yoga', link: '/yoga-education-optional/unit-3-historical-aspects-yoga' },
+          { text: 'Unit IV: Introduction to Yogic Texts', link: '/yoga-education-optional/unit-4-introduction-yogic-texts' },
+          { text: 'Unit V: Yoga and Health', link: '/yoga-education-optional/unit-5-yoga-health' },
+        ],
+      }],
+      '/work-vocational-education/': [{
+        text: 'Work & Vocational Education',
+        items: [
+          { text: 'Unit I: Aims, Objectives and Bases', link: '/work-vocational-education/unit-1-aims-objectives-bases' },
+          { text: 'Unit II: Development of the Concept and Teacher\'s Role', link: '/work-vocational-education/unit-2-development-concept-teacher' },
+          { text: 'Unit III: Approaches and Methods of Teaching', link: '/work-vocational-education/unit-3-approaches-methods-teaching' },
+          { text: 'Unit IV: Aids, Equipment and Assistance', link: '/work-vocational-education/unit-4-aids-equipment-assistance' },
+          { text: 'Unit V: Aspects of Teaching', link: '/work-vocational-education/unit-5-aspects-teaching' },
+        ],
+      }],
+      '/peace-value-education/': [{
+        text: 'Peace & Value Education',
+        items: [
+          { text: 'Unit I: Peace Education', link: '/peace-value-education/unit-1-peace-education' },
+          { text: 'Unit II: Social Perspective of Peace Education', link: '/peace-value-education/unit-2-social-perspective-peace-education' },
+          { text: 'Unit III: Value Education', link: '/peace-value-education/unit-3-value-education' },
+          { text: 'Unit IV: General Idea of Values', link: '/peace-value-education/unit-4-general-idea-values' },
+          { text: 'Unit V: Methods of Evaluation', link: '/peace-value-education/unit-5-methods-evaluation' },
+        ],
+      }],
+      '/health-physical-education/': [{
+        text: 'Health and Physical Education',
+        items: [
+          { text: 'Unit I: Health Education Scenario in India', link: '/health-physical-education/unit-1-health-education-scenario-india' },
+          { text: 'Unit II: Common and Uncommon Diseases', link: '/health-physical-education/unit-2-common-uncommon-diseases' },
+          { text: 'Unit III: Technology-Related Health Risks', link: '/health-physical-education/unit-3-tech-related-health-risks' },
+          { text: 'Unit IV: Health Issues, Vision and Mission', link: '/health-physical-education/unit-4-health-issues-vision-mission' },
+          { text: 'Unit V: First Aid — Principles and Uses', link: '/health-physical-education/unit-5-first-aid-principles-uses' },
         ],
       }],
       '/ict-critical-understanding/': [{
