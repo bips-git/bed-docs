@@ -7,7 +7,7 @@ description: "An exploration of the meaning, sources, and educational perspectiv
 
 ::: info Course
 Course-XI (1.4.11) (Optional) — Peace & Value Education
-As detailed in the syllabus file named Optional, this unit explores the theoretical foundations of values and their practical application in education[span_0](start_span)[span_0](end_span).
+As detailed in the syllabus file named Optional, this unit explores the theoretical foundations of values and their practical application in education.
 :::
 
 ## Meaning, Concept, Nature and Sources of Values

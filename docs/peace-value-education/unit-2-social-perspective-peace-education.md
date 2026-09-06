@@ -7,7 +7,7 @@ description: "An exploration of justice, equality, critical thinking, and UNESCO
 
 ::: info Course
 Course-XI (1.4.11) (Optional) — Peace & Value Education
-As detailed in the syllabus file named Optional, this unit explores the social frameworks and values necessary to build a peaceful educational environment[span_0](start_span)[span_0](end_span).
+As detailed in the syllabus file named Optional, this unit explores the social frameworks and values necessary to build a peaceful educational environment.
 :::
 
 ## Justice: Social, Economic, Cultural and Religious

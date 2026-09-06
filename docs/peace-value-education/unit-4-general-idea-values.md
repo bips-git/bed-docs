@@ -7,7 +7,7 @@ description: "An overview of value classifications, handling value conflicts, an
 
 ::: info Course
 Course-XI (1.4.11) (Optional) — Peace & Value Education
-As detailed in the syllabus file named Optional, this unit explores the categorization of values, practical value conflicts, and the creation of effective teaching materials[span_0](start_span)[span_0](end_span).
+As detailed in the syllabus file named Optional, this unit explores the categorization of values, practical value conflicts, and the creation of effective teaching materials.
 :::
 
 ## Classification of Values: Personal and Social
