@@ -30,6 +30,10 @@ export default defineConfig({
     outline: { level: [2, 3], label: 'On this page' },
     logo: '/logo.svg',
     siteTitle: false, 
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/bips-git' },
+      { icon: 'codeberg', link: 'https://codeberg.org/bips-git' },
+    ],
     nav: [
       {
         text: 'Courses',
@@ -37,6 +41,8 @@ export default defineConfig({
           { text: 'Gender, School and Society - (1.4.6)', link: '/gender-school-society/unit-1-key-concerns' },
           { text: 'Knowledge and Curriculum - (1.4.8B)', link: '/knowledge-curriculum/unit-1-dynamics' },
           { text: 'Creating an Inclusive School - (1.4.10)', link: '/inclusive-school/unit-1-introduction' },
+          { text: 'Critical Understanding of ICT - (EPC-3)', link: '/ict-critical-understanding/unit-1-digital-technology' },
+          { text: 'Yoga Education - (EPC-4)', link: '/yoga-education/unit-1-introduction' },
           {
             text: '1.4.11 – Optional',
             items: [
@@ -48,15 +54,8 @@ export default defineConfig({
               { text: 'Health and Physical Education', link: '/health-physical-education/unit-1-health-education-scenario-india' },
             ],
           },
-          { text: 'Critical Understanding of ICT - (EPC-3)', link: '/ict-critical-understanding/unit-1-digital-technology' },
-          { text: 'Yoga Education - (EPC-4)', link: '/yoga-education/unit-1-introduction' },
         ],
       },
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/bips-git' },
-      { icon: 'codeberg', link: 'https://codeberg.org/bips-git' },
     ],
 
     sidebar: {

@@ -11,8 +11,8 @@ features:
     link: /knowledge-curriculum/unit-1-dynamics
   - title: Creating an Inclusive School
     link: /inclusive-school/unit-1-introduction
-  - title: Guidance and Counselling
-    link: /guidance-counselling/unit-1-overview
+  - title: 1.4.11 – Optional
+    link: /optional-courses/
   - title: Critical Understanding of ICT
     link: /ict-critical-understanding/unit-1-digital-technology
   - title: Yoga Education
