@@ -15,25 +15,30 @@
 :root {
   --vp-c-bg: #ffffff;
   --vp-c-bg-alt: rgba(246, 246, 247, 0.8);
+  --vp-c-bg-soft: #f2f7f6;
   --vp-c-bg-elv: rgba(255, 255, 255, 0.72);
+  --vp-c-border: #d7e5e3;
   --vp-c-text-1: #1d1d1f;
   --vp-c-text-2: #6e6e73;
-  --vp-c-divider: rgba(0, 0, 0, 0.08);
-  --vp-c-brand-1: #0071e3;
-  --vp-c-brand-2: #0071e3;
-  --vp-c-brand-3: #0077ed;
+  --vp-c-divider: rgba(13, 148, 136, 0.14);
+  --vp-c-brand-1: #0d9488;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
 }
 
 .dark {
-  --vp-c-bg: #000000;
-  --vp-c-bg-alt: rgba(20, 20, 22, 0.8);
-  --vp-c-bg-elv: rgba(28, 28, 30, 0.72);
-  --vp-c-text-1: #f5f5f7;
-  --vp-c-text-2: #98989d;
-  --vp-c-divider: rgba(255, 255, 255, 0.08);
-  --vp-c-brand-1: #0a84ff;
-  --vp-c-brand-2: #0a84ff;
-  --vp-c-brand-3: #369aff;
+  --vp-c-bg: #1e1e2e;
+  --vp-c-bg-alt: rgba(24, 24, 37, 0.85);
+  --vp-c-bg-soft: #313244;
+  --vp-c-bg-elv: rgba(49, 50, 68, 0.75);
+  --vp-c-border: #45475a;
+  --vp-c-text-1: #cdd6f4;
+  --vp-c-text-2: #bac2de;
+  --vp-c-text-3: #a6adc8;
+  --vp-c-divider: rgba(205, 214, 244, 0.1);
+  --vp-c-brand-1: #cba6f7;
+  --vp-c-brand-2: #cba6f7;
+  --vp-c-brand-3: #b4befe;
 }
 
 .VPNavBar {
@@ -56,79 +61,47 @@
   .VPSidebar { backdrop-filter: blur(12px); }
 }
 
-/* Named Themes */
-
-html[data-theme="teal"] {
-  color-scheme: light;
-  --vp-c-bg: #f4faf9;
-  --vp-c-bg-alt: rgba(230, 245, 242, 0.8);
-  --vp-c-bg-soft: #e7f4f1;
-  --vp-c-bg-elv: rgba(255, 255, 255, 0.75);
-  --vp-c-border: #bcded7;
-  --vp-c-divider: rgba(15, 42, 39, 0.1);
-  --vp-c-gutter: rgba(15, 42, 39, 0.1);
-  --vp-c-text-1: #0f2a27;
-  --vp-c-text-2: #4b6b66;
-  --vp-c-text-3: #7c9591;
-  --vp-c-brand-1: #0d9488;
-  --vp-c-brand-2: #0d9488;
-  --vp-c-brand-3: #14b8a6;
+:root {
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #0d9488 30%, #5eead4 70%);
+  --vp-home-hero-image-filter: blur(56px);
 }
 
-html.dark[data-theme="nord"] {
-  color-scheme: dark;
-  --vp-c-bg: #2e3440;
-  --vp-c-bg-alt: rgba(59, 66, 82, 0.8);
-  --vp-c-bg-soft: #3b4252;
-  --vp-c-bg-elv: rgba(67, 76, 94, 0.72);
-  --vp-c-border: #4c566a;
-  --vp-c-divider: rgba(216, 222, 233, 0.12);
-  --vp-c-gutter: rgba(0, 0, 0, 0.3);
-  --vp-c-text-1: #eceff4;
-  --vp-c-text-2: #b7c0d8;
-  --vp-c-text-3: #7c8aa8;
-  --vp-c-brand-1: #88c0d0;
-  --vp-c-brand-2: #88c0d0;
-  --vp-c-brand-3: #8fbcbb;
+.dark {
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #cba6f7 30%, #f5c2e7 70%);
 }
 
-html.dark[data-theme="neon"] {
-  color-scheme: dark;
-  --vp-c-bg: #0a0a12;
-  --vp-c-bg-alt: rgba(18, 18, 30, 0.8);
-  --vp-c-bg-soft: #14141f;
-  --vp-c-bg-elv: rgba(24, 24, 38, 0.75);
-  --vp-c-border: #2a2a3d;
-  --vp-c-divider: rgba(255, 255, 255, 0.08);
-  --vp-c-gutter: rgba(0, 0, 0, 0.4);
-  --vp-c-text-1: #e8e8f0;
-  --vp-c-text-2: #9d9db0;
-  --vp-c-text-3: #6b6b80;
-  --vp-c-brand-1: #00e5ff;
-  --vp-c-brand-2: #00e5ff;
-  --vp-c-brand-3: #ff2fb0;
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
-html.dark[data-theme="navy-blue"] {
-  color-scheme: dark;
-  --vp-c-bg: #0b1524;
-  --vp-c-bg-alt: rgba(15, 26, 42, 0.8);
-  --vp-c-bg-soft: #132038;
-  --vp-c-bg-elv: rgba(20, 33, 52, 0.72);
-  --vp-c-border: #22304a;
-  --vp-c-divider: rgba(230, 237, 247, 0.1);
-  --vp-c-gutter: rgba(0, 0, 0, 0.35);
-  --vp-c-text-1: #e6edf7;
-  --vp-c-text-2: #94a7c4;
-  --vp-c-text-3: #5f7396;
-  --vp-c-brand-1: #4d8dff;
-  --vp-c-brand-2: #4d8dff;
-  --vp-c-brand-3: #7db1ff;
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(80px);
+  }
+}
+.VPHero .image-src {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
-/* Hide VitePress's own light/dark toggle while a fixed theme is
-   active — flipping it would do nothing visible once these variables
-   above override .dark, so leaving it live would just be confusing. */
-html[data-theme] .VPSwitchAppearance {
-  display: none !important;
+@media (min-width: 640px) {
+  .VPHero .image-src {
+    width: 240px;
+    height: 240px;
+    max-width: 240px;
+    max-height: 240px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-src {
+    width: 280px;
+    height: 280px;
+    max-width: 280px;
+    max-height: 280px;
+  }
 }

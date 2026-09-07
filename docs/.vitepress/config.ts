@@ -1,35 +1,17 @@
 import { defineConfig } from 'vitepress'
 
-const themeBootstrapScript = `
-(function () {
-  try {
-    var DARK_THEMES = ['nord', 'neon', 'navy-blue'];
-    var t = localStorage.getItem('qubes-theme') || 'default';
-    var html = document.documentElement;
-    if (t === 'default') return;
-    html.setAttribute('data-theme', t);
-    if (DARK_THEMES.indexOf(t) !== -1) {
-      html.classList.add('dark');
-    } else {
-      html.classList.remove('dark');
-    }
-  } catch (e) {}
-})();
-`.trim()
-
 export default defineConfig({
   base: '/bed-docs/',
   title: 'B.Ed Study Material',
   appearance: 'light',
   head: [
     ['meta', { name: 'color-scheme', content: 'light dark' }],
-    ['script', {}, themeBootstrapScript],
   ],
   themeConfig: {
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
-    logo: '/logo.svg',
-    siteTitle: false, 
+    logo: { light: '/logo-light.svg', dark: '/logo-dark.svg' },
+    siteTitle: 'B.ED' , 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bips-git' },
       { icon: 'codeberg', link: 'https://codeberg.org/bips-git' },

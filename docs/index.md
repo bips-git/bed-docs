@@ -4,6 +4,10 @@ hero:
   name: B.Ed Study Material
   text: Clear, Concise, Simplified
   tagline: Semester IV coursework, explained simply.
+  image:
+    light: /logo-light.svg
+    dark: /logo-dark.svg
+    alt: BEd Docs
 features:
   - title: Gender, School and Society
     link: /gender-school-society/unit-1-key-concerns
