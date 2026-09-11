@@ -25,19 +25,19 @@ export default defineConfig({
           {
             text: 'কোর্সসমূহ',
             items: [
-              { text: 'লিঙ্গ, বিদ্যালয় ও সমাজ - (১.৪.৬)', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'জেন্ডার, বিদ্যালয় ও সমাজ', link: '/bn/gender-school-society/unit-1-key-concerns' },
             ],
           },
         ],
         sidebar: {
           '/bn/gender-school-society/': [{
-            text: 'লিঙ্গ, বিদ্যালয় ও সমাজ',
+            text: 'জেন্ডার, স্কুল ও সমাজ',
             items: [
-              { text: 'প্রথম একক: প্রধান প্রসঙ্গসমূহ', link: '/bn/gender-school-society/unit-1-key-concerns' },
-              { text: 'দ্বিতীয় একক: লিঙ্গ-অধ্যয়ন- দৃষ্টান্ত পরিবর্তন', link: '/bn/gender-school-society/unit-2-paradigm-shifts' },
-              { text: 'তৃতীয় একক: লিঙ্গ, ক্ষমতা ও শিক্ষা', link: '/bn/gender-school-society/unit-3-gender-power-education' },
-              { text: 'চতুর্থ একক: পাঠ্যক্রমে লিঙ্গ-সংক্রান্ত বিষয়', link: '/bn/gender-school-society/unit-4-gender-curriculum' },
-              { text: 'পঞ্চম একক: লিঙ্গ, যৌনতা, যৌন হয়রানি ও নির্যাতন', link: '/bn/gender-school-society/unit-5-sexuality-harassment' },
+              { text: 'ইউনিট ১: মূল বিষয়', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'ইউনিট ১2 মূল বিষয়', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'ইউনিট ১3 মূল বিষয়', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'ইউনিট ১4 মূল বিষয়', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'ইউনিট ১5 মূল বিষয়', link: '/bn/gender-school-society/unit-1-key-concerns' },
             ],
           }],
         },
