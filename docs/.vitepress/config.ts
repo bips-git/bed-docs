@@ -26,6 +26,7 @@ export default defineConfig({
             text: 'কোর্সসমূহ',
             items: [
               { text: 'লিঙ্গ, বিদ্যালয় ও সমাজ - (১.৪.৬)', link: '/bn/gender-school-society/unit-1-key-concerns' },
+              { text: 'জ্ঞান ও পাঠ্যক্রম, দ্বিতীয় অংশ - (১.৪.৮-খ)' , link: '/bn/knowledge-curriculum/unit-1-dynamics' },
             ],
           },
         ],
@@ -38,6 +39,16 @@ export default defineConfig({
               { text: 'তৃতীয় একক: লিঙ্গ, ক্ষমতা ও শিক্ষা', link: '/bn/gender-school-society/unit-3-gender-power-education' },
               { text: 'চতুর্থ একক: পাঠ্যক্রমে লিঙ্গ-সংক্রান্ত বিষয়', link: '/bn/gender-school-society/unit-4-gender-curriculum' },
               { text: 'পঞ্চম একক: লিঙ্গ, যৌনতা, যৌন হয়রানি ও নির্যাতন', link: '/bn/gender-school-society/unit-5-sexuality-harassment' },
+            ],
+          }],
+          '/bn/knowledge-curriculum/': [{
+                text: 'জ্ঞান ও পাঠ্যক্রম, দ্বিতীয় অংশ',
+                items: [
+                  { text: 'পাঠ্যক্রম উন্নয়নের গতিশীলতা', link: '/bn/knowledge-curriculum/unit-1-dynamics' },
+                  { text: 'পাঠ্যক্রম ও পাঠ্যসূচির সম্পর্ক', link: '/bn/knowledge-curriculum/unit-2-curriculum-syllabi' },
+                  { text: 'পাঠ্যক্রম পরিকল্পনা, বিদ্যালয় অভিজ্ঞতা ও মূল্যায়ন', link: '/bn/knowledge-curriculum/unit-3-designing-evaluation' },
+                  { text: 'ক্ষমতা, ভাবাদর্শ ও পাঠ্যক্রম', link: '/bn/knowledge-curriculum/unit-4-power-ideology' },
+                  { text: 'প্রক্রিয়া ও অনুশীলন হিসেবে পাঠ্যক্রম', link: '/bn/knowledge-curriculum/unit-5-process-practice' },
             ],
           }],
         },
